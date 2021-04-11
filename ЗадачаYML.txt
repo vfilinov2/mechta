@@ -1,0 +1,53 @@
+---
+- name: Мечта
+  hosts: [otdel_1]
+  tasks:
+  - name: Cотрудники
+    name_employ: Оля
+	  count: 4
+		count_buh: 3
+    name_employ: Дмитрий
+	  count: 3
+    name_employ: Иван
+	  count: 2
+    rank_level_ЗП: 1
+	
+  hosts: [otdel_2]
+  tasks:
+  - name: Cотрудники
+    name_employ: Роман
+	  count: 4
+		count_lawyer: 4
+    name_employ: Максим
+	  count: 2
+	    count_driver: 2
+    age_max: 30 
+	
+  hosts: [otdel_3]
+  tasks:
+  - name: Cотрудники
+    name_employ: Иван, Николай
+	  count: 2
+		count_builder: 2
+ - name: Cотрудники
+    name_employ: Оля
+	  count: 1
+		count_lawyer: 1
+
+  hosts: [otdel_4, otdel_5]
+  tasks:
+  - name: Cотрудники
+    name_employ: Юля
+	  count: 5
+		count_paper_work: 5 
+    rank_level_ЗП: 2
+  
+  hosts: [otdel_6]
+  tasks:
+  - name: Cотрудники
+    name_employ: Игорь Викторович
+	  count: 1
+		count_security: 1
+    age_min: 65   		
+
+    
